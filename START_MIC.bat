@@ -6,11 +6,8 @@ echo    Starting Virtual Mic Receiver...
 echo =========================================
 echo.
 
-:: Switch to the correct drive just in case
-D:
-
-:: Navigate to your project folder
-cd "D:\Android Projects\VirtualMic"
+:: Switch to the current script directory
+cd /d "%~dp0"
 
 :: Install requirements
 py -m pip install zeroconf pystray pillow numpy customtkinter > nul 2>&1
